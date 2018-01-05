@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TDDDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzn-1Q-oL4">
+                                <rect key="frame" x="254" y="607" width="105" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZq-pI-gre">
+                                <rect key="frame" x="315" y="20" width="44" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQ3-Kb-tvw">
+                                <rect key="frame" x="40" y="196.5" width="294" height="294"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMp-lX-XXj">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="141"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <state key="normal" title="0" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJj-7O-mFI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j38-dZ-6FJ">
+                                        <rect key="frame" x="153" y="0.0" width="141" height="141"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="champagneButton"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sIe-sQ-URf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuN-EG-un9">
+                                        <rect key="frame" x="0.0" y="153" width="141" height="141"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="lightningButton"/>
+                                        <state key="normal" image="lightning" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qln-Ug-epC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOJ-hK-94o">
+                                        <rect key="frame" x="153" y="153" width="141" height="141"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="spaceButton"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wH2-fe-1Ih"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j38-dZ-6FJ" secondAttribute="trailing" id="26c-Ph-PNZ"/>
+                                    <constraint firstItem="vuN-EG-un9" firstAttribute="width" secondItem="qQ3-Kb-tvw" secondAttribute="width" multiplier="0.48" id="5mM-u3-I0A"/>
+                                    <constraint firstItem="j38-dZ-6FJ" firstAttribute="width" secondItem="qQ3-Kb-tvw" secondAttribute="width" multiplier="0.48" id="8e4-GL-UyR"/>
+                                    <constraint firstItem="WOJ-hK-94o" firstAttribute="width" secondItem="qQ3-Kb-tvw" secondAttribute="width" multiplier="0.48" id="BOg-eb-E3J"/>
+                                    <constraint firstItem="NMp-lX-XXj" firstAttribute="width" secondItem="qQ3-Kb-tvw" secondAttribute="width" multiplier="0.48" id="Bsh-SC-dzA"/>
+                                    <constraint firstItem="j38-dZ-6FJ" firstAttribute="top" secondItem="qQ3-Kb-tvw" secondAttribute="top" id="CzF-lm-HJ2"/>
+                                    <constraint firstItem="NMp-lX-XXj" firstAttribute="height" secondItem="qQ3-Kb-tvw" secondAttribute="height" multiplier="0.48" id="DgY-b7-mWN"/>
+                                    <constraint firstItem="j38-dZ-6FJ" firstAttribute="height" secondItem="qQ3-Kb-tvw" secondAttribute="height" multiplier="0.48" id="LRw-4W-7XW"/>
+                                    <constraint firstItem="NMp-lX-XXj" firstAttribute="top" secondItem="qQ3-Kb-tvw" secondAttribute="top" id="OGP-MF-2G5"/>
+                                    <constraint firstAttribute="width" secondItem="qQ3-Kb-tvw" secondAttribute="height" multiplier="1:1" id="Q5K-kv-9yR"/>
+                                    <constraint firstItem="NMp-lX-XXj" firstAttribute="leading" secondItem="qQ3-Kb-tvw" secondAttribute="leading" id="Xma-xl-YwW"/>
+                                    <constraint firstItem="vuN-EG-un9" firstAttribute="height" secondItem="qQ3-Kb-tvw" secondAttribute="height" multiplier="0.48" id="Y6h-L3-8Vv"/>
+                                    <constraint firstItem="WOJ-hK-94o" firstAttribute="height" secondItem="qQ3-Kb-tvw" secondAttribute="height" multiplier="0.48" id="ZND-NL-Bab"/>
+                                    <constraint firstAttribute="bottom" secondItem="WOJ-hK-94o" secondAttribute="bottom" id="c4y-s8-gwP"/>
+                                    <constraint firstAttribute="trailing" secondItem="WOJ-hK-94o" secondAttribute="trailing" id="ip6-Va-IkK"/>
+                                    <constraint firstAttribute="bottom" secondItem="vuN-EG-un9" secondAttribute="bottom" id="kLR-Rt-ENd"/>
+                                    <constraint firstItem="vuN-EG-un9" firstAttribute="leading" secondItem="qQ3-Kb-tvw" secondAttribute="leading" id="w5g-e6-EUl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87z-dJ-fQh">
+                                <rect key="frame" x="164" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.72156862745098038" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lzn-1Q-oL4" secondAttribute="bottom" constant="20" id="KfD-jg-u0m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lzn-1Q-oL4" secondAttribute="trailing" constant="16" id="PWm-oC-rYY"/>
+                            <constraint firstItem="qQ3-Kb-tvw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YHa-ww-kzX"/>
+                            <constraint firstItem="iZq-pI-gre" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="apG-V4-VJh"/>
+                            <constraint firstItem="qQ3-Kb-tvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cQW-DB-p8g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZq-pI-gre" secondAttribute="trailing" constant="16" id="xI9-SA-EKE"/>
+                            <constraint firstItem="qQ3-Kb-tvw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xhA-ei-bSv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="champagneButton" destination="j38-dZ-6FJ" id="qlV-Il-Un3"/>
+                        <outlet property="lightningButton" destination="vuN-EG-un9" id="Lzc-jK-eP6"/>
+                        <outlet property="numberButton" destination="NMp-lX-XXj" id="M7T-Bn-sbu"/>
+                        <outlet property="spaceButton" destination="WOJ-hK-94o" id="dUU-OG-XSh"/>
+                        <outlet property="testButton" destination="87z-dJ-fQh" id="s61-5y-OfK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="73.313343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_border" width="400" height="400"/>
+        <image name="champagne" width="49" height="50"/>
+        <image name="lightning" width="29" height="50"/>
+        <image name="space" width="47" height="50"/>
+    </resources>
+</document>
